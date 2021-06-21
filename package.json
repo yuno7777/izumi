@@ -1,5 +1,5 @@
 {
-  "name": "mai-bot",
+  "name": "izumi",
   "version": "1.0.0",
   "description": "Giveaway bot created with discord-giveaways package in discord.js",
   "main": "index.js",
@@ -35,6 +35,6 @@
     "node": "12.x"
   },
   "repository": {
-    "url": "https://github.com/ZeroDiscord/GiveawayBot"
+    "url": "https://github.com/pancake420/izumi"
   }
 }
