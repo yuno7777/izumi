@@ -18,7 +18,7 @@ module.exports.run = async (client, message, args) => {
       .addField("3. No pornographic/adult/other NSFW material","This is a community server and not meant to share this kind of material.")
       .addField("4. Follow the Discord Community Guidelines and Terms Of Service", "You can find them here:\n[community guidelines](https://discord.com/guidelines)\n[terms of service](https://discord.com/terms)")
       .setTimestamp()
-      .setFooter(`Mai Sakurajima | Developed by Levi ❅#0420`, client.user.displayAvatarURL());
+      .setFooter(`Rules | ©️ 2021 Kanae`, client.user.displayAvatarURL());
   
 
     return message.channel.send(rules);

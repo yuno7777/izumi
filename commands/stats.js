@@ -17,19 +17,19 @@ module.exports.run = async (client, message, args) => {
     let cores = os.cpus().length;
 
     let stats = new Discord.MessageEmbed()
-    .setAuthor('Maki#7777')
+    
     .setTitle(`Statistics of ${client.user.username}`)
-    .setColor('RED')
+    .setColor('#FFE5b4')
     .addField("Server Count", `${servercount}`, true)
-    .addField("Users Count", `${usercount}`, true)
-    .addField("Channel's Count", `${channelscount}`, true)
+    .addField("Users Count", `${client.users.cache.size}`, true)
+    
     .addField('Architecture', `${arch}`, true)
     .addField('Platform', `${platform}`, true)
     .addField('Node-Version', `${NodeVersion}`, true)
     .addField('Shards', `${shard}`, true)
-    .addField('Cores', `${cores}`, true)
+    .addField('Developers', '**・pancake#6996**')
     .setTimestamp()
-    .setFooter(`${message.author.tag}`, message.author.displayAvatarURL());
+    .setFooter('Bot Stats | ©️ 2021 Kanae', client.user.displayAvatarURL());
     message.channel.send(stats);
 };
 

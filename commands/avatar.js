@@ -35,7 +35,7 @@ module.exports = {
       new MessageEmbed()
       .setColor('#FFE5B4')
       .setImage(avatar)
-      .setFooter(`Mai Sakurajima | Developed by Levi ❅#0420`, client.user.displayAvatarURL())
+      .setFooter(`Avatar | Kanae`, client.user.displayAvatarURL())
       .setDescription(`[Avatar for **${user.tag}**](${avatar})`)
     );
   }

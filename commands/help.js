@@ -11,15 +11,15 @@ module.exports.run = async (client, message, args) => {
       
       .setTitle("Command List & Guide for the Bot")
     
-      .addField("\u2000 :tada: Giveaways ","`,help giveaway`")
-      .addField("\u2000 :moneybag: Heists", "`,help heist`")
+      .addField("\u2000 :tada: Giveaways ","`,giveaway_help`")
+      .addField("\u2000 :moneybag: Heists", "`,heist_help`")
       
-      .addField("\u2000 <:discord_staff:856355844551213087> Utility", "`,help utility`", true)
-      .addField("\u2000 :tools: Moderation", "`,help moderation`")
-      .addField("\u2000 :money_with_wings: Donations", "`,help donation`")
+      .addField("\u2000 <:discord_staff:856355844551213087> Utility", "`,utility_help`", true)
+      .addField("\u2000 :tools: Moderation", "`,moderation_help`")
+      .addField("\u2000 :money_with_wings: Donations", "`,donation_help`")
       
       .setTimestamp()
-      .setFooter(`Izumi | pancake#6996`, client.user.displayAvatarURL());
+      .setFooter(`Kanae | ©️ 2021 pancake#6996`, client.user.displayAvatarURL());
   
 
     return message.channel.send(help);
