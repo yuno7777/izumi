@@ -3,6 +3,8 @@ const client = new Discord.Client();
 const fs = require('fs');
 const config = require('./config.json');
 
+
+client.commands = new Discord.Collection();
 client.config = config;
 
 // Init discord giveaways
@@ -16,15 +18,13 @@ client.giveawaysManager = new GiveawaysManager(client, {
         reaction: "🎉"
     }
 });
-//Coded by Zero
 
-/* Load all events */
 fs.readdir("./events/", (_err, files) => {
     files.forEach((file) => {
         if (!file.endsWith(".js")) return;
         const event = require(`./events/${file}`);
         let eventName = file.split(".")[0];
-        console.log(`👌 Event loaded: ${eventName}`);
+        console.log(` Event loaded: ${eventName}`);
         client.on(eventName, event.bind(null, client));
     });
 });
