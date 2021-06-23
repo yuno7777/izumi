@@ -23,10 +23,10 @@ module.exports.run = async (client, message, args) => {
       .addField("<a:pinkarrow:849119402905436210> Heist Timer", `<a:DM_whitearrow:849122644439072799> Time - ${time}`, true)
       .addField("<a:pinkarrow:849119402905436210> Things to remember:", "<a:DM_whitearrow:849122644439072799> Type `join heist` after this channel is unlocked\n<a:DM_whitearrow:849122644439072799> Withdraw `2000` before joining the heist\n<a:DM_whitearrow:849122644439072799> Use life saver before joining\n<a:DM_whitearrow:849122644439072799> We will not remove the slowmode anytime during the heist")
       .setTimestamp()
-      .setFooter(`Mai Sakurajima | Developed by Levi ❅#0420`, client.user.displayAvatarURL());
+      
   
 
-    m.edit(heist)
+      return message.channel.send(heist);
 
     
     message.delete();
