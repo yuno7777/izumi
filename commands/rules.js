@@ -19,7 +19,7 @@ module.exports.run = async (client, message, args) => {
       .addField("<:lime:850727712092061736> Follow the Discord Community Guidelines and Terms Of Service", "You can find them here:\n[community guidelines](https://discord.com/guidelines)\n[terms of service](https://discord.com/terms)")
       .addField("<:lime:850727712092061736> Follow Dank Tos","This includes but isn't limited to real money trading, autotypers, alt accounts. if you are caught violating any of these rules, we will not hesitate to report your account to DMO staff.\n[dank-memer tos](https://dankmemer.lol/rules)")
       .addField("<:lime:850727712092061736> Direct & Indirect Threats", "Threats to other users of DDoS, Death, DoX, abuse, and other malicious threats are absolutely prohibited and disallowed.")
-      .setImage('https://imgur.com/a/DFjxYGY')
+      
 
       .setTimestamp()
       .setFooter(`Rules | ©️ 2021 Kanae`, client.user.displayAvatarURL());
