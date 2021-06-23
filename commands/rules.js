@@ -12,11 +12,15 @@ module.exports.run = async (client, message, args) => {
 
     let rules = new Discord.MessageEmbed()
       .setColor('#FFE5B4')    
-      .setTitle("・rules <a:green_tick:849451639404494888>")
-      .addField("1. Be respectful","You must respect all users, regardless of your liking towards them. Treat others the way you want to be treated.")
-      .addField("2. No Inappropriate Language", "The use of profanity should be kept to a minimum. However, any derogatory language towards any user is prohibited.")
-      .addField("3. No pornographic/adult/other NSFW material","This is a community server and not meant to share this kind of material.")
-      .addField("4. Follow the Discord Community Guidelines and Terms Of Service", "You can find them here:\n[community guidelines](https://discord.com/guidelines)\n[terms of service](https://discord.com/terms)")
+      .setTitle("<:pink:850727927049879582> rules <a:green_tick:849451639404494888>")
+      .addField("<:lime:850727712092061736> Be respectful","You must respect all users, regardless of your liking towards them. Treat others the way you want to be treated.")
+      .addField("<:lime:850727712092061736> No Inappropriate Language", "The use of profanity should be kept to a minimum. However, any derogatory language towards any user is prohibited.")
+      .addField("<:lime:850727712092061736> No pornographic/adult/other NSFW material","This is a community server and not meant to share this kind of material.")
+      .addField("<:lime:850727712092061736> Follow the Discord Community Guidelines and Terms Of Service", "You can find them here:\n[community guidelines](https://discord.com/guidelines)\n[terms of service](https://discord.com/terms)")
+      .addField("<:lime:850727712092061736> Follow [dank-memer tos](https://dankmemer.lol/rules)","This includes but isn't limited to real money trading, autotypers, alt accounts. if you are caught violating any of these rules, we will not hesitate to report your account to DMO staff.")
+      .addField("<:lime:850727712092061736> Direct & Indirect Threats", "Threats to other users of DDoS, Death, DoX, abuse, and other malicious threats are absolutely prohibited and disallowed.")
+      .setImage('https://tenor.com/view/rules-gif-18225622')
+
       .setTimestamp()
       .setFooter(`Rules | ©️ 2021 Kanae`, client.user.displayAvatarURL());
   
