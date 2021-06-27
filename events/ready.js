@@ -6,8 +6,8 @@ module.exports = (client) => {
   const activities = ["//help",`over ${client.users.cache.size} users!`];
   setInterval(() => {
     let activity = activities[Math.floor(Math.random() * activities.length)];
-    client.user.setActivity(',help', {
-  type: "STREAMING",
+    client.user.setActivity('OVER DOGGO DANKERS', {
+  type: "WATCHING",
   url: "https://www.twitch.tv/discord"});
   }, 20000);
   
