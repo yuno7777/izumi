@@ -40,6 +40,8 @@ fs.readdir("./commands/", (_err, files) => {
         let commandName = file.split(".")[0];
         client.commands.set(commandName, props);
         console.log(`Command loaded: ${commandName}`);
+        if (pull.aliases && Array.isArray(pull.aliases)) pull.aliases.forEach(alias => client.aliases.set(alias, pull.name));
+    
     });
 });
 
