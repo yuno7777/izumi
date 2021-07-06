@@ -4,7 +4,7 @@ const fs = require('fs');
 const config = require('./config.json');
 
 
-client.aliases = new discord.Collection();  
+client.aliases = new Discord.Collection();  
 
 client.commands = new Discord.Collection();
 client.config = config;
@@ -31,7 +31,6 @@ fs.readdir("./events/", (_err, files) => {
     });
 });
 
-client.commands = new Discord.Collection();
 
 /* Load all commands */
 fs.readdir("./commands/", (_err, files) => {
