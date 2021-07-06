@@ -1,7 +1,7 @@
 const { MessageEmbed } = require('discord.js');
 const Discord = require('discord.js');
 const Beautify = require('beautify');
-const config = require('../config.json');
+const config = require('../../config.json');
 
 module.exports.run = async (client, message, args) => {
   if (message.author.bot) return;
