@@ -4,7 +4,7 @@ module.exports = {
   guildOnly: true,
   permissions: [ 'KICK_MEMBERS' ],
   clientPermissions: [ 'KICK_MEMBERS' ],
-  group: 'moderation',
+  category: 'moderation',
   description: 'Kick mentioned user from this server.',
   parameters: [ 'User Mention | ID', 'Kick Reason'],
   examples: [

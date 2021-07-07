@@ -5,7 +5,7 @@ module.exports = {
   description:
     "Get list of all command and even get to know every command detials",
   usage: "help <cmd>",
-  category: "info",
+  category: "help",
   run: async (client, message, args) => {
     
     if (args[0]) {

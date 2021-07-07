@@ -8,7 +8,7 @@ module.exports.run = async (client, message, args) => {
     let prefix = config.prefix;
     if(!message.content.startsWith(prefix)) return;
   
-  if (message.author.id !== "603948445362946084") {
+  if (message.author.id !== "497770611578503261") {
     return message.channel.send(":x: Forbidden: This Command is Owner-Only!")
   }
   
